@@ -1,11 +1,4 @@
-const formatString = function(string) {
-    if (string.length <= 40) {
-        return string;
-    } else {
-        return string.slice(0, 40) + '...';
-};
-    }
-    
+const formatString = (string) => string.length <= 40 ? string : string.slice(0, 40) + '...';
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
